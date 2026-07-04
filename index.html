@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rilakkuma Run</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-container">
+    <h1>Rilakkuma & Korilakkuma Run</h1>
+
+    <div id="menu">
+        <button class="mode-btn" data-mode="easy">EASY</button>
+        <button class="mode-btn" data-mode="normal">NORMAL</button>
+        <button class="mode-btn" data-mode="hard">HARD</button>
+        <button class="mode-btn" data-mode="auto">AUTO</button>
+    </div>
+
+    <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+    <div id="gameover" class="hidden">
+        <div class="overlay-box">
+            <h2>GAME OVER</h2>
+            <button id="retryBtn">Retry</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
